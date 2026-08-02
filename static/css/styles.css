@@ -3,16 +3,19 @@
 :root{
     --bg-main: #dde2ef;
     --primary: #e8b582;
+    --text-muted: #5b6879;
 }
 
 *{
     font-family: "Manrope", sans-serif;
     margin:0px;
     padding:0px;
+    box-sizing: border-box;
 }
 
 body{
     background-color: var(--bg-main);
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -85,7 +88,7 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 120px 40px;
+    padding: 60px 40px;
     background-color: #f0f0ff;
 }
 
@@ -101,4 +104,89 @@ body{
     color: var(--primary);
     margin-bottom: 32px;
 }
+
+.hero h1{
+    font-size: 5rem;
+    color: black;
+    max-width: 1000px;
+    margin-bottom: 24px;
+    line-height: 1;
+}
+
+.hero h1 span {
+    color: var(--primary)
+}
+
+.hero > p{
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 650px;
+    margin-bottom: 55px;
+    font-weight: 700;
+}
+
+.hero-actions{
+    display: flex;
+    align-items: center;
+    gap:25px;
+    margin-bottom: 60px
+}
+
+.btn-cta{
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    text-decoration: none;
+    padding: 20px 48px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    gap: 12px;
+}
+
+.btn-cta:hover{
+    background-color: #333333;
+}
+
+.link-action{
+    color: var(--text-muted);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.floating-card{
+    position:absolute;
+    width: 320px;
+    background-color: white;
+    padding: 14px;
+    border-radius: 36px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.floating-card img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius:25px;
+    background-color: gray;
+}
+
+.card-left{
+
+    left: 20px;
+    bottom: 15%;
+
+}
+
+.card-right{
+
+    right: 20px;
+    bottom: 15%;
+
+}
+
+
 
