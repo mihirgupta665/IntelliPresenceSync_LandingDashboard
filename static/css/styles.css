@@ -78,3 +78,27 @@ body{
     transition: all 0.3s;
 }
 
+.hero{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 40px;
+    background-color: #f0f0ff;
+}
+
+.badge{
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgb(219, 187, 219);
+    border-radius: 100px;
+    padding:10px 20px;
+    font-size:0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 32px;
+}
+
