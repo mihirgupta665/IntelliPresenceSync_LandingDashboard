@@ -1,0 +1,27 @@
+
+
+:root{
+    --bg-main: #dde2ef;
+}
+
+body{
+    background-color: var(--bg-main);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 80px;
+    backdrop-filter: black;
+    position: sticky;
+    top:0px;
+    z-index: 999;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    gap:12px;
+    
+}
