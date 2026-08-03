@@ -19,20 +19,24 @@ Face Recognition • Voice Biometrics • QR Enrollment • Cloud Synchronizatio
 
 <p align="center">
 
-<a href="LANDING_WEBSITE_URL">
+<a href="https://intelli-presence-sync-landing-dashb.vercel.app/">
 <img src="https://img.shields.io/badge/🌐_Landing_Dashboard-Live-black?style=for-the-badge&logo=vercel">
 </a>
 
-<a href="STREAMLIT_APP_URL">
+<a href="https://intellipresencesync-mihirlegacy.streamlit.app/">
 <img src="https://img.shields.io/badge/🤖_AI_Attendance-Live-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white">
 </a>
 
-<a href="GITHUB_REPOSITORY">
-<img src="https://img.shields.io/badge/📂_GitHub-Repository-181717?style=for-the-badge&logo=github">
+<a href="https://github.com/mihirgupta665/IntelliPresenceSync">
+<img src="https://img.shields.io/badge/🤖_AI_Repository-GitHub-181717?style=for-the-badge&logo=github">
 </a>
 
-<a href="DEMO_VIDEO_URL">
-<img src="https://img.shields.io/badge/🎥_Demo_Video-Watch-red?style=for-the-badge&logo=youtube">
+<a href="https://github.com/mihirgupta665/IntelliPresenceSync_LandingDashboard">
+<img src="https://img.shields.io/badge/🌐_Landing_Repository-GitHub-181717?style=for-the-badge&logo=github">
+</a>
+
+<a href="static/demo.mp4">
+<img src="https://img.shields.io/badge/🎥_Full_Demo-Download-red?style=for-the-badge&logo=video">
 </a>
 
 </p>
@@ -60,7 +64,7 @@ Face Recognition • Voice Biometrics • QR Enrollment • Cloud Synchronizatio
 ---
 
 <p align="center">
-<img src="static/hero.gif" width="92%">
+<img src="static/hero.gif" width="100%">
 </p>
 
 ---
@@ -70,11 +74,11 @@ Face Recognition • Voice Biometrics • QR Enrollment • Cloud Synchronizatio
 - Overview
 - Why IntelliPresenceSync?
 - IntelliPresenceSync Ecosystem
+- Screenshot Gallery
 - Project Highlights
 - Core Features
 - Live Demonstration
 - Project Walkthrough
-- Screenshot Gallery
 - System Architecture
 - AI Workflow
 - Technology Stack
@@ -145,71 +149,6 @@ Attendance records are automatically synchronized to **Supabase PostgreSQL**, pr
                            ▼
                  Attendance Records & Reports
 ```
-
----
-
-# ✨ Project Highlights
-
-- ✅ End-to-End AI Attendance Ecosystem
-- ✅ Dual Biometric Verification
-- ✅ Face Recognition using Computer Vision
-- ✅ Voice Biometrics using Deep Learning
-- ✅ Dynamic QR-Based Student Enrollment
-- ✅ Secure Supabase Cloud Integration
-- ✅ Teacher & Student Management Portals
-- ✅ Interactive Attendance Dashboard
-- ✅ Fully Responsive User Interface
-- ✅ Professional Flask Landing Dashboard
-- ✅ Streamlit-Based AI Console
-- ✅ Modern Modular Architecture
-
----
-
-# ⭐ Core Features
-
-| Feature | Description |
-|----------|-------------|
-| 📸 **Face Recognition** | Recognize multiple students from a classroom photograph using facial embeddings and machine learning classification. |
-| 🎙️ **Voice Biometrics** | Identify registered students using deep-learning speaker embeddings and similarity matching. |
-| 📲 **QR Enrollment** | Enroll students instantly using dynamic QR codes or invitation links. |
-| 👨‍🏫 **Attendance Management** | Manage subjects, attendance records, classroom sessions, and reports through an intuitive dashboard. |
-| ☁️ **Cloud Synchronization** | Securely synchronize attendance records, biometric embeddings, and student information with Supabase PostgreSQL. |
-| 📱 **Responsive Design** | Optimized user experience across desktops, tablets, and mobile devices. |
-| 🔒 **Secure Authentication** | Password hashing with bcrypt and secure cloud-based data management. |
-
----
-
-# 🎥 Live Demonstration
-
-| Resource | Link |
-|-----------|------|
-| 🌐 Landing Dashboard | LANDING_WEBSITE_URL |
-| 🤖 AI Attendance Platform | STREAMLIT_APP_URL |
-| 🎥 Project Demo | DEMO_VIDEO_URL |
-| 📂 GitHub Repository | GITHUB_REPOSITORY |
-
----
-
-<p align="center">
-<img src="static/hero.gif" width="92%">
-</p>
-
----
-
-# 🎬 Project Walkthrough
-
-The walkthrough demonstrates the complete IntelliPresenceSync ecosystem from student registration to AI-powered attendance verification.
-
-### Demonstration Flow
-
-- 🌐 Landing Dashboard
-- 👨‍🎓 Student Registration
-- 📲 Subject Enrollment
-- 👩‍🏫 Teacher Dashboard
-- 📸 Face Recognition Attendance
-- 🎙️ Voice Biometric Attendance
-- 📊 Attendance Reports
-- ☁️ Cloud Synchronization
 
 ---
 
@@ -388,6 +327,72 @@ Teachers can efficiently manage classrooms, create subjects, share enrollment li
 </p>
 
 ---
+
+# ✨ Project Highlights
+
+- ✅ End-to-End AI Attendance Ecosystem
+- ✅ Dual Biometric Verification
+- ✅ Face Recognition using Computer Vision
+- ✅ Voice Biometrics using Deep Learning
+- ✅ Dynamic QR-Based Student Enrollment
+- ✅ Secure Supabase Cloud Integration
+- ✅ Teacher & Student Management Portals
+- ✅ Interactive Attendance Dashboard
+- ✅ Fully Responsive User Interface
+- ✅ Professional Flask Landing Dashboard
+- ✅ Streamlit-Based AI Console
+- ✅ Modern Modular Architecture
+
+---
+
+# ⭐ Core Features
+
+| Feature | Description |
+|----------|-------------|
+| 📸 **Face Recognition** | Recognize multiple students from a classroom photograph using facial embeddings and machine learning classification. |
+| 🎙️ **Voice Biometrics** | Identify registered students using deep-learning speaker embeddings and similarity matching. |
+| 📲 **QR Enrollment** | Enroll students instantly using dynamic QR codes or invitation links. |
+| 👨‍🏫 **Attendance Management** | Manage subjects, attendance records, classroom sessions, and reports through an intuitive dashboard. |
+| ☁️ **Cloud Synchronization** | Securely synchronize attendance records, biometric embeddings, and student information with Supabase PostgreSQL. |
+| 📱 **Responsive Design** | Optimized user experience across desktops, tablets, and mobile devices. |
+| 🔒 **Secure Authentication** | Password hashing with bcrypt and secure cloud-based data management. |
+
+---
+
+# 🎥 Live Demonstration
+
+| Resource | Link |
+|-----------|------|
+| 🌐 Landing Dashboard | https://intelli-presence-sync-landing-dashb.vercel.app/ |
+| 🤖 AI Attendance Platform | https://intellipresencesync-mihirlegacy.streamlit.app/ |
+| 🎥 Full Demo Video | [demo.mp4](static/demo.mp4) |
+| 📂 AI Attendance Repository | https://github.com/mihirgupta665/IntelliPresenceSync |
+| 📂 Landing Dashboard Repository | https://github.com/mihirgupta665/IntelliPresenceSync_LandingDashboard |
+
+---
+
+# 🎬 Project Walkthrough
+
+The walkthrough demonstrates the complete IntelliPresenceSync ecosystem from student registration to AI-powered attendance verification.
+
+### Demonstration Flow
+
+- 🌐 Landing Dashboard
+- 👨‍🎓 Student Registration
+- 📲 Subject Enrollment
+- 👩‍🏫 Teacher Dashboard
+- 📸 Face Recognition Attendance
+- 🎙️ Voice Biometric Attendance
+- 📊 Attendance Reports
+- ☁️ Cloud Synchronization
+
+---
+
+# 🎬 Project Demonstration
+
+A complete walkthrough of IntelliPresenceSync is included with the repository.
+
+**▶️ [Watch the Full Project Demonstration](static/demo.mp4)**
 
 # 🏗 System Architecture
 
@@ -775,7 +780,7 @@ Building intelligent software solutions powered by Artificial Intelligence.
 <img src="https://img.shields.io/badge/GitHub-mihirgupta665-181717?style=for-the-badge&logo=github">
 </a>
 
-<a href="YOUR_LINKEDIN_URL">
+<a href="https://www.linkedin.com/in/mihir-gupta-980173299/">
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin">
 </a>
 
@@ -783,7 +788,7 @@ Building intelligent software solutions powered by Artificial Intelligence.
 <img src="https://img.shields.io/badge/Portfolio-Website-blue?style=for-the-badge">
 </a>
 
-<a href="mailto:YOUR_EMAIL">
+<a href="mailto:mihirgupta665@gmail.com">
 <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white">
 </a>
 
