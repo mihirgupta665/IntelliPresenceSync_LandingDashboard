@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Features | IntelliPresenceSync{% endblock %}
+
+{% block content %}
+    <section id="features" class="features" style="padding-top: 40px; padding-bottom: 80px;">
+
+        <h2>Innovative Features</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="f-icon-box">📸</div>
+                <h3>AI Face Analysis</h3>
+                <p> Advanced neural networks recognize every student's face from a single class photo, making attendance
+                    instant and accurate. </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="f-icon-box">🎙️</div>
+                <h3>Sequential Voice ID</h3>
+                <p>Students say "Present" one-by-one, and our audio-Al matches their voice biometrics against stored
+                    embeddings in real-time.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="f-icon-box">📲</div>
+                <h3>QR Driver Roaster</h3>
+                <p>Course codes generate unique QR codes for instant student enrollment. No more manual entry or data
+                    management headaches.</p>
+            </div>
+        </div>
+
+    </section>
+{% endblock %}
+
+{% block cta %}
+    <section class="cta-features">
+        <h2>Experience Smart Biometrics in Action</h2>
+        <p>Scan classrooms in milliseconds and verify students with voice biometrics. Seamless, fast, and secure. Run the AI Attendance application now.</p>
+        <a href="https://intellipresencesync-mihirlegacy.streamlit.app/" class="btn-accent">Launch AI Attendance App</a>
+    </section>
+{% endblock %}

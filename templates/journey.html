@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block title %}Journey | IntelliPresenceSync{% endblock %}
+
+{% block content %}
+    <section id="journey" class="teacher-flow" style="padding-top: 40px;">
+
+        <div class="flow-container">
+
+            <div class="section-tag" style="text-align:center; margin-bottom: 20px; display: block;"> -- Workflow --
+            </div>
+            <h2 style="text-align: center; font-size:3.5rem; margin-bottom: 80px;">The Teacher's Journey</h2>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 01</div>
+                    <h3>Secure Authentication</h3>
+                    <p>Start your session with our high-security authentication
+                        portal. Your data is encrypted and synced across all your
+                        devices.</p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{ url_for('static', filename='img/demo/snap-teacher-flow-1-login.png') }}"
+                        alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-image">
+                    <img src="{{ url_for('static', filename='img/demo/snap-teacher-flow-2-dashboard.png') }}"
+                        alt="flow image">
+                </div>
+                <div class="flow-content">
+                    <div class="step-badge">STEP 02</div>
+                    <h3>Interactive Dashboard</h3>
+                    <p>Manage all your subjects, attendance logs, and student
+                        rosters from a single, beautiful unified stream.</p>
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 03</div>
+                    <h3>Course Management</h3>
+                    <p>Creating a new subject is a breeze. Just name it, and
+                        SnapClass generates everything you need to start
+                        tracking.</p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{ url_for('static', filename='img/demo/snap-teacher-flow-3-create-course.png') }}"
+                        alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-image">
+                    <img src="{{ url_for('static', filename='img/demo/snap-teacher-flow-5.2-photo-attendance.png') }}"
+                        alt="flow image">
+                </div>
+                <div class="flow-content">
+                    <div class="step-badge">STEP 04</div>
+                    <h3>FaceID Attendance</h3>
+                    <p>Use high-speed computer vision to scan the entire room.
+                        Our Al identifies every student from a single class photo
+                        in milliseconds.</p>
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 05</div>
+                    <h3>Voice ID Attendance</h3>
+                    <p>Switch to voice mode for a futuristic roll-call. Students
+                        speak sequentialy, and our Al matches their unique voice
+                        signatures.</p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{ url_for('static', filename='img/demo/snap-teacher-flow-5.1-voice_attendance.png') }}"
+                        alt="flow image">
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-image">
+                    <img src="{{ url_for('static', filename='img/demo/snap-teacher-flow-5-see-stored-records.png') }}"
+                        alt="flow image">
+                </div>
+                <div class="flow-content">
+                    <div class="step-badge">STEP 06</div>
+                    <h3>Actionable Records</h3>
+                    <p>Review and manage historical logs. View confidence scores, download CSV reports, and track
+                        long-term attendance trends.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="student-journey" class="teacher-flow" style="background: white; padding-top: 40px; padding-bottom: 40px;">
+        <div class="flow-container">
+            <div class="section-tag" style="text-align: center; display: block; margin-bottom: 40px;">--- Workflow ---
+            </div>
+            <h2 style="text-align: center; font-size: 3.5rem; margin-bottom: 80px;">The Student's Journey</h2>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <span class="step-badge">Phase 01</span>
+                    <h3>Instant Enrollment</h3>
+                    <p>Students join courses in seconds using unique QR codes or course links provided by their
+                        teachers. No tedious sign-up forms.</p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{ url_for('static', filename='img/demo/snap-teacher-flow-4-share_qr_or_link.png') }}"
+                    alt="Biometric Registration">
+                </div>
+            </div>
+            
+            <div class="flow-step">
+                <div class="flow-image">
+                    <img src="{{ url_for('static', filename='img/demo/snap-student-flow-1-login.png') }}"
+                        alt="Student Enrollment">
+                </div>
+                <div class="flow-content">
+                    <span class="step-badge">Phase 02</span>
+                    <h3>Biometric Registration</h3>
+                    <p>Students register their FaceID and VoiceID once. Our AI securely stores these biometrics for
+                        all future class sessions.</p>
+                </div>
+            </div>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <span class="step-badge">Phase 03</span>
+                    <h3>Personal Dashboard</h3>
+                    <p>A unified view for students to track their attendance percentage across all subjects and
+                        receive real-time updates.</p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{ url_for('static', filename='img/demo/snap-student-flow-3-dashboard.png') }}"
+                        alt="Student Dashboard">
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

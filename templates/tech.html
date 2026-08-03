@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}Tech Stack | IntelliPresenceSync{% endblock %}
+
+{% block content %}
+    <section id="tech" class="tech-stack" style="margin-top: 40px; margin-bottom: 80px;">
+
+        <div class="section-tag"> --- OUR BACKEND --- </div>
+
+        <h2> Advanced Tech Stack </h2>
+
+        <div class="tech-grid">
+
+            <div class="tech-item">
+                <div class="tech-card">
+                    <div class="t-icon">⚡️</div>
+                    <h4>Streamlit & Flask</h4>
+                    <p>Reactive frontend architecture paired with a robust Flask landing layer.</p>
+                    <span class="tech-tag">Platform</span>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-card">
+                    <div class="t-icon">👁️</div>
+                    <h4>Face Recognition</h4>
+                    <p>Leveraging FaceRecognition and Dlib for high-fidelity facial biometrics.</p>
+                    <span class="tech-tag">Vision AI</span>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-card">
+                    <div class="t-icon">🎤</div>
+                    <h4>Voice Embeddings</h4>
+                    <p>Utilizing Resemblyzer and Librosa for unique student voice signatures.</p>
+                    <span class="tech-tag">Audio AI</span>
+                </div>
+            </div>
+
+            <div class="tech-item">
+                <div class="tech-card">
+                    <div class="t-icon">☁️</div>
+                    <h4>Supabase Cloud</h4>
+                    <p>Real-time PostgreSQL infrastructure with secure auth and sync.</p>
+                    <span class="tech-tag">Storage</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+{% endblock %}
+
+{% block cta %}
+    <section class="cta-tech">
+        <h2>Powered by Modern AI Infrastructure</h2>
+        <p>IntelliPresenceSync is built on top of robust neural network pipelines and real-time backend synchronization. Try out the live application to see the performance.</p>
+        <a href="https://intellipresencesync-mihirlegacy.streamlit.app/" class="btn-tech">Go to Main Application</a>
+    </section>
+{% endblock %}

@@ -6,6 +6,11 @@
     --text-muted: #5b6879;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Offset for sticky navbar */
+}
+
 * {
     font-family: "Manrope", sans-serif;
     margin: 0px;
@@ -63,6 +68,20 @@ body {
     color: var(--primary);
 }
 
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-text-mobile {
+    display: none;
+}
+
 .btn-pill {
     background-color: white;
     color: black;
@@ -82,7 +101,7 @@ body {
 }
 
 .hero {
-    min-height: 90vh;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -402,18 +421,27 @@ body {
 
 .footer-bottom {
     padding-top: 30px;
-    padding-bottom: -10px;
+    padding-bottom: 20px;
     border-top: 1px solid #333333;
-    text-align: center;
 }
 
-.footer-bottom p {
+.footer-bottom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 0.95rem;
+    color: #d6d4d4;
+    flex-wrap: wrap;
     font-weight: 500;
 }
 
-.footer-bottom span {
+.footer-bottom-content span span {
     color: var(--primary);
-    font-weight: 500;
+}
+
+.footer-separator {
+    color: #5b6879;
 }
 
 /* Teacher Journey */
@@ -431,6 +459,10 @@ body {
     align-items: center;
     gap: 80px;
     margin-bottom: 120px
+}
+
+.flow-step:last-child {
+    margin-bottom: 0px;
 }
 
 .flow-content {
@@ -472,6 +504,172 @@ body {
     display: block;
 }
 
+/* Custom CTAs for Features and Tech Stack tabs */
+.cta-features {
+    background: linear-gradient(135deg, #1f1f2e 0%, #0f0f15 100%);
+    color: white;
+    padding: 100px 80px;
+    text-align: center;
+    border-radius: 80px;
+    margin: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.cta-features h2 {
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+    color: white;
+}
+.cta-features p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #b0b3c6;
+}
+.btn-accent {
+    background-color: var(--primary);
+    color: black;
+    padding: 18px 40px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.btn-accent:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(232, 181, 130, 0.3);
+}
+
+.cta-tech {
+    background: linear-gradient(135deg, #4b1a7a 0%, #1e0936 100%);
+    color: white;
+    padding: 100px 80px;
+    text-align: center;
+    border-radius: 80px;
+    margin: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.cta-tech h2 {
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+    color: white;
+}
+.cta-tech p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #d8c3f2;
+}
+.btn-tech {
+    background-color: #4BB786;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.btn-tech:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(75, 183, 134, 0.4);
+}
+
+/* Application Overview Section */
+.app-overview {
+    padding: 50px 80px 100px;
+    text-align: center;
+    background-color: #f0f4f8;
+}
+
+.app-overview h2 {
+    font-size: 3.5rem;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.app-overview .section-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: 60px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.overview-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 40px;
+    padding: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.overview-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.overview-badge {
+    align-self: flex-start;
+    background-color: rgba(124, 77, 255, 0.1);
+    color: #7c4dff;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.overview-info h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.overview-info p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.overview-img-container {
+    border-radius: 24px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    background-color: #fafbfc;
+    width: 100%;
+    aspect-ratio: 16/10;
+}
+
+.overview-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.overview-card:hover .overview-img-container img {
+    transform: scale(1.03);
+}
+
 
 
 @media(max-width: 768px) {
@@ -488,8 +686,27 @@ body {
         font-size: 0.85rem;
     }
 
+    .nav-toggle {
+        display: flex;
+    }
+
     .nav-links {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        padding: 24px;
+        gap: 20px;
+        border-top: 1px solid #222;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     .btn-pill {
@@ -627,4 +844,62 @@ body {
         height: auto;
     }
 
+    .cta-features, .cta-tech {
+        padding: 60px 16px;
+        margin: 20px;
+        border-radius: 30px;
+    }
+
+    .cta-features h2, .cta-tech h2 {
+        font-size: 2rem;
+    }
+
+    .btn-accent, .btn-tech {
+        width: 100%;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .app-overview {
+        padding: 60px 16px;
+    }
+
+    .app-overview h2 {
+        font-size: 2.2rem;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .overview-card {
+        padding: 24px;
+        border-radius: 24px;
+    }
+
+    .overview-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    .footer-separator {
+        display: none;
+    }
+
+}
+
+@media(max-width: 480px) {
+    .cta-text-desktop {
+        display: none;
+    }
+    .cta-text-mobile {
+        display: inline;
+    }
 }
