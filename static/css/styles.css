@@ -597,6 +597,34 @@ body {
         font-size: 2rem !important;
     }
 
-     
+    .purple-section{
+        padding: 60px 16px;
+        margin: 20px;
+        border-radius: 30px;
+    } 
+
+    .purple-section h2{
+        font-size: 2rem;
+    }
+
+    .btn-white{
+        width: 100%;
+        padding: 16px;
+    }
+
+    .main-footer{
+        padding:60px 16px 30px;
+    }
+
+    .main-footer .footer-grid{
+        grid-template-columns: 1fr;
+        gap:40px;
+        text-align: center;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
 
 }
